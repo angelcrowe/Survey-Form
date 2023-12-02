@@ -5,7 +5,7 @@ It showcases a simple form implementation, demonstrating various functionalities
 
 ## Screenshot
 
-![demo screenshot](../survey-screenshot.png)
+![demo screenshot](survey-screenshot.png)
 
 ## Features
 
