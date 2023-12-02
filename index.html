@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, instial-scale=1.0" />
+    <title> Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <!-- Heading -->
+        <h1 id="title">Yet Another Survey Form</h1>
+
+        <!-- Description -->
+        <p id="description"> Thank you for taking the time to help us improve the platform </p>
+
+    </header>
+
+    <!-- Survey Form -->
+    <form id="survey-form">
+
+        <label id="name">Name
+            <input id="name" name="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label id="email">Email
+            <input id="email" name="email" type="email" placeholder="Enter your Email" required />
+        </label>
+        <label id="age">Age <span> (optional) </span>
+            <input id="age" type="number" name="age" min="13" max="120" placeholder="Age" />
+        </label>
+
+        </br>
+
+        <!-- Role -->
+        <label for="role-option">Which option best describes your current role? <span> (optional) </span>
+            <select id="role-option" name="role-option">
+                <option value="">Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Perfer not to say</option>
+                <option value="5">Other</option>
+            </select>
+        </label>
+
+        <!-- Recommendation -->
+        <fieldset>
+            <label>
+                <legend>Would you recommend us to a friend?</legend>
+                <label for="definitely">
+                    <input name="user-recommend" id="definitely" type="radio" class="inline" value="0">Definitely
+                </label>
+
+                <label for="maybe">
+                    <input name="user-recommend" id="maybe" type="radio" class="inline" value="1">Maybe
+                </label>
+
+                <label for="not-sure">
+                    <input name="user-recommend" id="not-sure" type="radio" class="inline" value="2">Not sure
+                </label>
+
+            </label>
+        </fieldset>
+
+        </br>
+
+        <!-- Feature -->
+        <label for="feature-option">
+            What is your favorite feature of ours?
+            <select id="feature-option" name="feature-option">
+                <option value="">Select an option</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+                <option value="3">Community</option>
+                <option value="4">Open Source</option>
+            </select>
+        </label>
+
+        </br>
+
+
+
+        <!-- Checkboxes -->
+        <fieldset>
+            <legend>What are you doing? (Check all that apply)</legend>
+
+            <label for="that">
+                <input id="that" name="checkboxes" type="checkbox" value="that" class="inline"> That
+            </label>
+            <label for="this">
+                <input id="this" name="checkboxes" type="checkbox" value="this" class="inline"> This
+            </label>
+            <label for="and-this">
+                <input id="and-this" name="checkboxes" type="checkbox" value="and-this" class="inline"> And This
+            </label>
+            <label for="and-that">
+                <input id="and-that" name="checkboxes" type="checkbox" value="and-that" class="inline"> And
+                That
+            </label>
+            </feildset>
+
+            </br>
+
+            <!-- Comments -->
+            <label for="comments">Any suggestions or comments?</label>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Enter your comment here..."></textarea>
+
+
+
+            <!-- Submit button to submit the form -->
+            <input type="submit" id="submit" value="SUBMIT" />
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+<html>
